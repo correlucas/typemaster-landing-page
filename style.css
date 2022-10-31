@@ -128,6 +128,7 @@ h4 {
   max-width: 1100px;
   margin: 0 auto;
   padding-inline: 20px;
+  overflow: hidden;
 }
 
 header {
@@ -157,19 +158,22 @@ header {
     'hero-heading hero-heading hero-image hero-image'
     'grid-1 grid-2 grid-2 grid-3';
   padding-bottom: 168px;
+  position: relative;
+  overflow: visible;
 }
 
-/* .hero-grid::before {
-  content: "";
+.hero-grid::before {
+  content: " ";
+  display: block;
   position: relative;
-  top: -994px;
-  right: -1090px;
+  top: -1000px;
+  right: -1065px;
   width: 255px;
   height: 240px;
   opacity: 70%;
   background-color: #ff0092;
   border-radius: 20px;
-} */
+}
 
 .hero-heading {
   display: flex;
