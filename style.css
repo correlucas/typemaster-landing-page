@@ -436,3 +436,96 @@ footer {
     font: 900 36px/36px 'Barlow', sans-serif;
   }
 }
+
+.grid-1,
+.hero-image,
+.hero-grid::before {
+  -webkit-animation: slideInTop ease-out 1s;
+  transition: all ease-out 1.5s;
+  animation-duration: 1.5s;
+  animation-delay: 600ms;
+}
+
+.grid-2,
+.hero-grid::after {
+  -webkit-animation: slideInBottom ease-out 1s;
+  transition: all ease-out 1.5s;
+  animation-duration: 1.5s;
+  animation-delay: 600ms;
+}
+
+.hero-heading,
+.grid-3 {
+  -webkit-animation: slideInLeft ease-out 2s;
+  transition: all ease-out 2s;
+  animation-duration: 1s;
+  animation-delay: 800ms;
+}
+
+
+@keyframes slideInTop {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInBottom {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+
+
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
