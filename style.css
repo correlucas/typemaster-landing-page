@@ -71,41 +71,41 @@ body {
 /* headings and buttons */
 
 h1 {
-  font: 900 56px/56px 'Barlow', sans-serif;
+  font: 900 3.5rem/3.5rem 'Barlow', sans-serif;
   text-transform: uppercase;
   color: var(--dark-blue);
 }
 
 h2 {
-  font: 900 32px/36px 'Barlow', sans-serif;
+  font: 900 2rem/2.25rem 'Barlow', sans-serif;
   text-transform: uppercase;
   color: var(--dark-blue);
 }
 
 h3 {
-  font: 900 24px/28px 'Barlow', sans-serif;
+  font: 900 1.5rem/1.75rem 'Barlow', sans-serif;
   text-transform: uppercase;
   color: var(--dark-blue);
 }
 
 p {
-  font: 400 16px/26px 'Barlow', sans-serif;
+  font: 400 1rem/1.625rem 'Barlow', sans-serif;
   color: var(--light-blue);
 }
 
 h4 {
-  font: 700 16px/26px 'Barlow', sans-serif;
+  font: 700 1rem/1.625rem 'Barlow', sans-serif;
   color: var(--light-blue);
   text-transform: uppercase;
 }
 
 .btn {
-  font: 700 16px/26px 'Barlow', sans-serif;
-  padding: 16px 26px;
+  font: 700 1rem/1.625rem 'Barlow', sans-serif;
+  padding: 1rem 1.625rem;
   background-color: var(--orange);
   text-transform: uppercase;
   color: white;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   cursor: pointer;
   transition: all ease 0.2s;
 }
@@ -131,17 +131,17 @@ h4 {
 
 .container,
 .container-grid {
-  max-width: 1100px;
+  max-width: 68.75rem;
   margin: 0 auto;
-  padding-inline: 20px;
+  padding-inline: 1.25rem;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 54px;
-  padding-bottom: 82px;
+  padding-top: 3.375rem;
+  padding-bottom: 5.125rem;
 }
 
 picture img,
@@ -151,7 +151,7 @@ picture img,
 .grid-2 img,
 .grid-3 img {
   max-width: 100%;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   object-fit: cover;
 }
 
@@ -163,11 +163,11 @@ main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, auto);
-  gap: 30px;
+  gap: 1.875rem;
   grid-template-areas:
     'hero-heading hero-heading hero-image hero-image'
     'grid-1 grid-2 grid-2 grid-3';
-  padding-bottom: 168px;
+  padding-bottom: 10.5rem;
   position: relative;
   overflow: visible;
 }
@@ -176,25 +176,25 @@ main {
   content: " ";
   display: block;
   position: absolute;
-  left: -265px;
-  bottom: 168px;
-  width: 255px;
-  height: 240px;
+  left: -16.5625rem;
+  bottom: 10.5rem;
+  width: 15.9375rem;
+  height: 15rem;
   opacity: 70%;
   background: linear-gradient(42.85deg, #E8EFF2 2%, #DEE5E8 48.45%);
-  border-radius: 20px;
+  border-radius: 1.25rem;
 }
 
 .hero-grid::after {
   content: " ";
   display: block;
   position: absolute;
-  right: -265px;
-  width: 255px;
-  height: 240px;
+  right: -16.5625rem;
+  width: 15.9375rem;
+  height: 15rem;
   opacity: 70%;
   background: linear-gradient(42.85deg, #E8EFF2 2%, #DEE5E8 48.45%);
-  border-radius: 20px;
+  border-radius: 1.25rem;
 }
 
 
@@ -209,16 +209,16 @@ main {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 40px;
+  gap: 2.5rem;
 }
 
 .hero-heading h1 {
-  padding-bottom: 24px;
+  padding-bottom: 1.5rem;
 }
 
 .hero-heading p {
-  padding-bottom: 40px;
-  max-width: 500px;
+  padding-bottom: 2.5rem;
+  max-width: 31.25rem;
 }
 
 .hero-image {
@@ -229,7 +229,7 @@ main {
 .grid-1 {
   display: flex;
   grid-area: grid-1;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   background-color: var(--orange);
 }
 
@@ -240,7 +240,7 @@ main {
 
 .grid-2 {
   display: flex;
-  padding-right: 60px;
+  padding-right: 3.75rem;
   grid-area: grid-2;
 }
 
@@ -248,14 +248,14 @@ main {
   display: flex;
   flex-direction: column;
   grid-area: grid-3;
-  gap: 24px;
+  gap: 1.5rem;
   justify-content: center;
 }
 
 .features {
   display: flex;
-  gap: 36px;
-  margin-bottom: 128px;
+  gap: 2.25rem;
+  margin-bottom: 8rem;
 }
 
 .feature-item {
@@ -268,35 +268,35 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 64px;
-  height: 64px;
-  border-radius: 16px;
-  margin-bottom: 40px;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1rem;
+  margin-bottom: 2.5rem;
   background-color: var(--orange);
 }
 
 
 .icon img {
   display: block;
-  padding: 16px;
+  padding: 1rem;
 }
 
 .feature-item h3 {
-  padding-bottom: 24px;
+  padding-bottom: 1.5rem;
 }
 
 .feature-item p {
-  font: 400 15px/28px 'Barlow', sans-serif;
+  font: 400 0.9375rem/1.75rem 'Barlow', sans-serif;
   color: var(--light-blue);
 }
 
 footer {
   text-align: center;
-  padding-bottom: 40px;
+  padding-bottom: 2.5rem;
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 50rem) {
 
   .hero-grid::after,
   .hero-grid::before {
@@ -304,17 +304,17 @@ footer {
   }
 
   h1 {
-    font: 900 48px/48px 'Barlow', sans-serif;
+    font: 900 3rem/3rem 'Barlow', sans-serif;
   }
 
   p {
-    font: 400 15px/26px 'Barlow', sans-serif;
+    font: 400 0.9375rem/1.625rem 'Barlow', sans-serif;
     color: var(--light-blue);
   }
 
   header {
-    padding-top: 40px;
-    padding-bottom: 62px;
+    padding-top: 2.5rem;
+    padding-bottom: 3.875rem;
   }
 
   .hero-grid {
@@ -325,7 +325,7 @@ footer {
       'hero-heading hero-heading  hero-image hero-image'
       'grid-1 grid-2 grid-2 grid-2'
       'grid-3 grid-3 grid-3 grid-3';
-    padding-bottom: 100px;
+    padding-bottom: 6.25rem;
     position: initial;
     overflow: initial;
   }
@@ -344,28 +344,28 @@ footer {
   }
 
   .hero-image {
-    transform: translateX(40px);
+    transform: translateX(2.5rem);
   }
 
   .features {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    margin-bottom: 128px;
+    gap: 3.75rem;
+    margin-bottom: 8rem;
   }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 33.75rem) {
 
   .container-grid {
-    max-width: 1100px;
+    max-width: 68.75rem;
     margin: 0 auto;
-    padding-inline: 0px;
+    padding-inline: 0rem;
   }
 
   .hero-grid {
     display: grid;
-    gap: 20px;
+    gap: 1.25rem;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto auto auto;
     grid-template-areas:
@@ -373,38 +373,38 @@ footer {
       'hero-image hero-image hero-image'
       'grid-1 grid-2 grid-2'
       'grid-3 grid-3 grid-3';
-    padding-bottom: 100px;
+    padding-bottom: 6.25rem;
   }
 
   .btn {
-    font: 700 15px/24px 'Barlow', sans-serif;
-    padding: 12px 22px;
+    font: 700 0.9375rem/1.5rem 'Barlow', sans-serif;
+    padding: 0.75rem 1.375rem;
   }
 
   .flex {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 40px;
+    gap: 2.5rem;
     justify-content: center;
   }
 
   .hero-heading {
-    margin-inline: 20px;
+    margin-inline: 1.25rem;
     text-align: center;
-    padding-bottom: 62px;
+    padding-bottom: 3.875rem;
   }
 
   .hero-image {
-    transform: translateX(20px);
+    transform: translateX(1.25rem);
   }
 
   .grid-1 {
-    transform: translateX(-20px);
+    transform: translateX(-1.25rem);
   }
 
   .grid-2 {
-    transform: translateX(-20px);
+    transform: translateX(-1.25rem);
   }
 
   .grid-3 {
@@ -413,17 +413,17 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 70px;
-    margin-inline: 40px;
+    padding-top: 4.375rem;
+    margin-inline: 2.5rem;
   }
 
   .features {
     display: flex;
     flex-direction: column;
     text-align: center;
-    gap: 60px;
-    margin-inline: 20px;
-    margin-bottom: 90px;
+    gap: 3.75rem;
+    margin-inline: 1.25rem;
+    margin-bottom: 5.625rem;
   }
 
   .feature-item {
@@ -431,9 +431,9 @@ footer {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 20rem) {
   h1 {
-    font: 900 36px/36px 'Barlow', sans-serif;
+    font: 900 2.25rem/2.25rem 'Barlow', sans-serif;
   }
 }
 
@@ -465,7 +465,7 @@ footer {
 
 @keyframes slideInTop {
   0% {
-    transform: translateY(-200px);
+    transform: translateY(-12.5rem);
     opacity: 0;
   }
 
@@ -477,7 +477,7 @@ footer {
 
 @keyframes slideInBottom {
   0% {
-    transform: translateY(200px);
+    transform: translateY(12.5rem);
     opacity: 0;
   }
 
@@ -489,7 +489,7 @@ footer {
 
 @keyframes slideInLeft {
   0% {
-    transform: translateX(200px);
+    transform: translateX(12.5rem);
     opacity: 0;
   }
 
