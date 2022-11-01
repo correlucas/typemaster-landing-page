@@ -129,11 +129,11 @@ h4 {
 
 /* general css */
 
-.container {
+.container,
+.container-grid {
   max-width: 1100px;
   margin: 0 auto;
   padding-inline: 20px;
-  overflow: hidden;
 }
 
 header {
@@ -207,6 +207,7 @@ main {
 
 .flex {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 40px;
 }
@@ -342,10 +343,6 @@ footer {
     align-items: center;
   }
 
-  /* .grid-3 p {
-    max-width: 400px;
-  } */
-
   .hero-image {
     transform: translateX(40px);
   }
@@ -359,20 +356,83 @@ footer {
 }
 
 @media (max-width: 540px) {
-  .hero-image {
-    transform: translateX(0px);
+
+  .container-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-inline: 0px;
   }
 
   .hero-grid {
     display: grid;
-    grid-template-columns: max-content 1fr;
-    grid-template-rows: auto auto auto;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas:
-      'hero-heading hero-heading'
-      'hero-image grid-1'
-      'grid-2 grid-2'
-      'grid-3 grid-3'
-    ;
+      'hero-heading hero-heading hero-heading'
+      'hero-image hero-image hero-image'
+      'grid-1 grid-2 grid-2'
+      'grid-3 grid-3 grid-3';
     padding-bottom: 100px;
+  }
+
+  .btn {
+    font: 700 15px/24px 'Barlow', sans-serif;
+    padding: 12px 22px;
+  }
+
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+  }
+
+  .hero-heading {
+    margin-inline: 20px;
+    text-align: center;
+    padding-bottom: 62px;
+  }
+
+  .hero-image {
+    transform: translateX(20px);
+  }
+
+  .grid-1 {
+    transform: translateX(-20px);
+  }
+
+  .grid-2 {
+    transform: translateX(-20px);
+  }
+
+  .grid-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 70px;
+    margin-inline: 40px;
+  }
+
+  .features {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 60px;
+    margin-inline: 20px;
+    margin-bottom: 90px;
+  }
+
+  .feature-item {
+    align-items: center;
+  }
+}
+
+@media (max-width: 320px) {
+  h1 {
+    font: 900 36px/36px 'Barlow', sans-serif;
   }
 }
