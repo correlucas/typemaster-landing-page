@@ -93,7 +93,8 @@ p {
   color: var(--light-blue);
 }
 
-h4 {
+h4,
+.release {
   font: 700 1rem/1.625rem 'Barlow', sans-serif;
   color: var(--light-blue);
   text-transform: uppercase;

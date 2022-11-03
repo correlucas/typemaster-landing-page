@@ -21,7 +21,7 @@ This is a solution to the [Typemaster pre-launch landing page challenge on Front
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/art-gallery-website-vanilla-css-custom-animations-and-hover-effects-dLv-qOWmK2)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/typemaster-prelaunch-land-page-vanilla-css-burger-menu-css-only-6J_gghd6Xz)
 - Live Site URL: [Live Site at Vercel](https://typemaster-landing-page-eight.vercel.app/)
 ## My process
 
